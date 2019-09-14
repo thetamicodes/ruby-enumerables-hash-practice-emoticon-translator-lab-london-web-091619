@@ -1,8 +1,6 @@
 require 'yaml'
 require 'pry'
 
-file_path = './lib/emoticons.yml'
-
 def load_library(file_path)
   hash = {:get_meaning => {}, :get_emoticon => {}}
   emoticons_file = YAML.load_file(file_path)
