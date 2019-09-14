@@ -9,13 +9,13 @@ def load_library(file_path)
    emoticon_hash["get_emoticon"][emoticons[0]] = emoticons[1]
  end
  emoticon_hash
- binding.pry
+# binding.pry
 end
 
 def get_japanese_emoticon(file_path = './lib/emoticons.yml', emoticon)
- library = load_library(file_path)
- if library["get_emoticon"].include?(emoticon)
-   library["get_emoticon"][emoticon]
+ emoticon_collection = load_library(file_path)
+ if emoticon_collection["get_emoticon"].include?(emoticon)
+   emoticon_collection["get_emoticon"][emoticon]
  else
    "Sorry, that emoticon was not found"
  end
