@@ -10,15 +10,12 @@ def load_library(file_path)
     hash[:get_emoticon][value[0]] = value[1] 
   end
   return hash 
-  binding.pry
+  # binding.pry
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  
-  
   load_library.each do |meaning_hash, emoticon_hash|
-  # binding.pry
-  
+  binding.pry 
   end
 end
 
